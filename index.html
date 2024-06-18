@@ -977,15 +977,30 @@
 
 
         <!-- FORM 1 -->
-        <form action="" class="contact-form">
+        <form id="form-portfolioJC" class="contact-form"
+          action="https://script.google.com/macros/s/AKfycbyZu4DwC04akztWSrhGQhbWSCMfgwy_4u3fTU-2PLO-Rw2s6udBfbvC7JoBqiggKXaG9A/exec"
+          method="POST">
 
-          <div class="form-wrapper">
+          <div class="form-wrapper moneyslot">
 
-            <label for="fname" class="form-label">Name</label>
+            <label for="formName" class="form-label">formName</label>
 
             <div class="input-wrapper">
 
-              <input type="text" name="fname" id="fname" required placeholder="e.g John Doe" class="input-field">
+              <select id="formName" name="formName">
+                <option value="form1-portfolioJC">form1-portfolioJC</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="f1name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="f1name" id="f1name" required placeholder="e.g John Doe" class="input-field">
 
               <ion-icon name="person-circle"></ion-icon>
 
@@ -995,11 +1010,11 @@
 
           <div class="form-wrapper">
 
-            <label for="femail" class="form-label">Email</label>
+            <label for="f1email" class="form-label">Email</label>
 
             <div class="input-wrapper">
 
-              <input type="email" name="femail" id="femail" required placeholder="e.g johndoe@mail.com"
+              <input type="email" name="f1email" id="f1email" required placeholder="e.g johndoe@mail.com"
                 class="input-field">
 
               <ion-icon name="mail"></ion-icon>
@@ -1010,11 +1025,11 @@
 
           <div class="form-wrapper">
 
-            <label for="fphone" class="form-label">Phone</label>
+            <label for="f1phone" class="form-label">Phone</label>
 
             <div class="input-wrapper">
 
-              <input type="tel" name="fphone" id="fphone" required placeholder="Phone Number" class="input-field">
+              <input type="tel" name="f1phone" id="f1phone" required placeholder="+27 21 555 1234" class="input-field">
 
               <ion-icon name="call"></ion-icon>
 
@@ -1024,11 +1039,11 @@
 
           <div class="form-wrapper">
 
-            <label for="fmessage" class="form-label">Message</label>
+            <label for="f1message" class="form-label">Message</label>
 
             <div class="input-wrapper">
 
-              <textarea name="fmessage" id="fmessage" required placeholder="Write message..." class="input-field"
+              <textarea name="f1message" id="f1message" required placeholder="Write message..." class="input-field"
                 style="resize: none;"></textarea>
 
               <ion-icon name="chatbubbles"></ion-icon>

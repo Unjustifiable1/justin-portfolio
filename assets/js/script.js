@@ -103,3 +103,23 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
+
+
+
+// form submission handler - Home Page Contact Section Form
+
+window.addEventListener("load", function () {
+  const form1 = document.getElementById('form-portfolioJC');
+  form1.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const data = new FormData(form1);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+      .then(() => {
+        alert("Success! I'll contact you soon. Thank you!");
+      })
+  });
+});
