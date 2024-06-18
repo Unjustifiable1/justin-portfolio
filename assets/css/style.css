@@ -532,6 +532,10 @@ main {
   max-width: 500px;
   width: 125%;
   margin-bottom: 30px;
+
+  picture {
+    filter: brightness(90%);
+  }
 }
 
 :is(.hero-social-list, .scroll-down) {
@@ -1176,7 +1180,7 @@ textarea.input-field {
      * typography
      */
 
-    --fs-2: 3rem;
+    --fs-2: 2.8rem;
 
     /**
      * spacing
