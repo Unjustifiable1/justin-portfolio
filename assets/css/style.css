@@ -84,6 +84,11 @@ body.dark_theme {
   --input-bg: hsl(0, 0%, 16%);
 
   --shadow-1: 10px 10px 40px var(--card-shadow);
+  --shadow-2:
+    0 0 4px var(--clr-black),
+    0 0 10px var(--clr-black),
+    0 0 20px var(--clr-black),
+    0 0 80px var(--clr-black);
 
 }
 
@@ -97,6 +102,11 @@ body.light_theme {
   --input-bg: hsl(0, 0%, 93%);
 
   --shadow-1: 10px 10px 40px var(--card-shadow);
+  --shadow-2:
+    0 0 4px var(--clr-black),
+    0 0 10px var(--clr-black),
+    0 0 20px var(--clr-black),
+    0 0 80px var(--clr-black);
 
 }
 
@@ -630,6 +640,10 @@ main {
 
 .about .btn-secondary {
   margin-bottom: 10px;
+}
+
+#about-vid {
+  box-shadow: var(--shadow-2);
 }
 
 
